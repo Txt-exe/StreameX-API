@@ -31,7 +31,7 @@ class StreamxText extends StatelessWidget {
       )
           : TextButton(
         onPressed: () {
-          onClick.call();
+          onClick?.call();
         },
         child: Text(
           text,
