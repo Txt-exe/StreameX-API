@@ -2,21 +2,20 @@ import 'package:flutter/material.dart';
 
 class StreamxText extends StatelessWidget {
   final String text;
-  final double size;
-  final FontWeight fontWeight;
-  final Color color;
-  final double wordSpacing;
-  final VoidCallback onClick;
+  final double? size;
+  final FontWeight? fontWeight;
+  final Color? color;
+  final double? wordSpacing;
+  final VoidCallback? onClick;
 
-  const StreamxText({super.key,
+  const StreamxText({
     required this.text,
-    required this.size,
-    required this.fontWeight,
-    required this.color,
-    required this.wordSpacing,
-    required this.onClick,
+    this.size,
+    this.fontWeight,
+    this.color,
+    this.wordSpacing,
+    this.onClick,
   });
-
   @override
   Widget build(BuildContext context) {
     return Container(
